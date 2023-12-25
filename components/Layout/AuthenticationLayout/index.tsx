@@ -1,7 +1,7 @@
 import { chakra } from '@chakra-ui/react'
-import { useStores } from 'hooks/useStores'
 import Head from 'next/head'
 import React, { ReactNode, useEffect } from 'react'
+import { useStores } from 'hooks/useStores'
 
 interface IAuthenticationLayoutProps {
   title?: string

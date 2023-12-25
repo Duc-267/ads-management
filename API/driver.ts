@@ -1,7 +1,7 @@
+import { get } from 'lodash'
 import { api, auth, errorHandler } from 'API'
 import { UserRoleEnum } from 'enums/userRole'
 import { IDriver, IDriverCreateParams } from 'interfaces/driver'
-import { get } from 'lodash'
 import { CommonError } from 'types'
 import { IFilter, IPaginationList } from 'types/common'
 

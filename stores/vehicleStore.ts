@@ -1,6 +1,6 @@
+import { makeAutoObservable } from 'mobx'
 import { getVehicleDetail, getVehicles, updateVehicle } from 'API/vehicle'
 import { IVehicle } from 'interfaces/vehicle'
-import { makeAutoObservable } from 'mobx'
 import { IFilter, IPaginationList } from 'types/common'
 import { RootStore } from '.'
 

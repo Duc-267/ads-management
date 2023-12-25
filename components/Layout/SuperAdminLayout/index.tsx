@@ -1,9 +1,9 @@
 import { VStack, chakra } from '@chakra-ui/react'
-import withSuperAdmin from 'HOCs/withSuperAdmin'
-import { useStores } from 'hooks/useStores'
 import { observer } from 'mobx-react'
 import Head from 'next/head'
 import React, { ReactNode, useEffect } from 'react'
+import withSuperAdmin from 'HOCs/withSuperAdmin'
+import { useStores } from 'hooks/useStores'
 import TopBar from './components/TopBar'
 
 interface IFleetManagerLayoutProps {

@@ -1,11 +1,11 @@
 import { Box, Text, VStack, useToast, Flex, Button } from '@chakra-ui/react'
 import { Divider } from '@chakra-ui/react'
 import { yupResolver } from '@hookform/resolvers/yup'
-import FormInput from 'components/FormInput'
-import { IFleet } from 'interfaces/fleet'
 import { get } from 'lodash'
 import React, { Dispatch, memo, RefObject, SetStateAction, useEffect, useState } from 'react'
 import { useForm, FormProvider } from 'react-hook-form'
+import FormInput from 'components/FormInput'
+import { IFleet } from 'interfaces/fleet'
 import { FleetFormSchema } from './types'
 import AvatarUpload from '../AvatarUpload'
 

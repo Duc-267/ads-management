@@ -1,8 +1,8 @@
 import { HStack, Spinner, Text, VStack, useToast } from '@chakra-ui/react'
-import { forgotPassword } from 'API/authenticate'
-import { useStores } from 'hooks/useStores'
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
+import { forgotPassword } from 'API/authenticate'
+import { useStores } from 'hooks/useStores'
 import routes from 'routes'
 import { SubmitButton } from '../../authenticatePage.styles'
 

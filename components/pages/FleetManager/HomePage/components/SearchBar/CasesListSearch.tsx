@@ -1,8 +1,8 @@
 import { Box, HStack } from '@chakra-ui/react'
-import SvgIcon from 'components/SvgIcon'
-import { ICaseDetail } from 'interfaces/case'
 import React from 'react'
 import Highlighter from 'react-highlight-words'
+import SvgIcon from 'components/SvgIcon'
+import { ICaseDetail } from 'interfaces/case'
 import { getValidArray } from 'utils/common'
 
 type Props = {

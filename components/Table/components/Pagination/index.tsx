@@ -1,8 +1,8 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons'
 import { Button, Flex, Text, Box, Icon } from '@chakra-ui/react'
-import { IPagination } from 'components/Table'
 import isNaN from 'lodash/isNaN'
 import React from 'react'
+import { IPagination } from 'components/Table'
 import { truncatePagination } from './utils'
 
 export interface IPaginationProps {

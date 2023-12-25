@@ -1,7 +1,7 @@
 import { Box, Heading, Text, VStack } from '@chakra-ui/react'
-import Icon from 'components/Icon'
 import React, { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
+import Icon from 'components/Icon'
 import ForgotPasswordConfirmForm from './components/ForgotPasswordConfirmForm'
 import ForgotPasswordForm from './components/ForgotPasswordForm'
 import LoginForm from './components/LoginForm'

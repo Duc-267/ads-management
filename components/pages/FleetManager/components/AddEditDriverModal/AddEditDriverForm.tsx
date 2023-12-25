@@ -1,12 +1,12 @@
 import { Box, Grid, GridItem, useToast } from '@chakra-ui/react'
 import { yupResolver } from '@hookform/resolvers/yup'
-import FormInput from 'components/FormInput'
-import AvatarUpload from 'components/pages/SuperAdmin/HomePage/components/AvatarUpload'
-import { IDriverProfile } from 'interfaces/driver'
 import { get } from 'lodash'
 import { observer } from 'mobx-react'
 import React, { memo, RefObject, useEffect, useState } from 'react'
 import { useForm, FormProvider } from 'react-hook-form'
+import FormInput from 'components/FormInput'
+import AvatarUpload from 'components/pages/SuperAdmin/HomePage/components/AvatarUpload'
+import { IDriverProfile } from 'interfaces/driver'
 import { driverFormSchema } from './types'
 
 interface IDriverFormProps {

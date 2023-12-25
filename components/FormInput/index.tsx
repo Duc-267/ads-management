@@ -10,11 +10,11 @@ import {
   NumberInputStepper,
   FormErrorMessage
 } from '@chakra-ui/react'
-import Icon from 'components/Icon'
 import get from 'lodash/get'
 import startCase from 'lodash/startCase'
 import { ReactNode } from 'react'
 import { Controller, useFormContext } from 'react-hook-form'
+import Icon from 'components/Icon'
 export interface IFormItemProps {
   name: string
   label?: string

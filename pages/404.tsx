@@ -1,7 +1,7 @@
 import { Stack, chakra } from '@chakra-ui/react'
-import Icon from 'components/Icon'
 import { observer } from 'mobx-react'
 import Head from 'next/head'
+import Icon from 'components/Icon'
 
 const Page404 = () => {
   return (

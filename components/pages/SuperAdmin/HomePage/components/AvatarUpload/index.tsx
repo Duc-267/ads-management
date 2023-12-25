@@ -1,7 +1,7 @@
 import { Avatar, Box, IconButton } from '@chakra-ui/react'
-import SvgIcon from 'components/SvgIcon'
 import { get } from 'lodash'
 import { ChangeEvent, memo, useEffect, useRef, useState } from 'react'
+import SvgIcon from 'components/SvgIcon'
 
 interface IAvatarUploadProps {
   handleUploadFile?: (file: File) => void

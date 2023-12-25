@@ -1,9 +1,9 @@
+import { makeAutoObservable } from 'mobx'
 import { getActivityLogs, getAllFleet, getCasesDetail } from 'API/fleet'
 import { FlagEnum } from 'enums/flag'
 import { IActivityLog } from 'interfaces/activityLog'
 import { ICaseDetail } from 'interfaces/case'
 import { IFleet } from 'interfaces/fleet'
-import { makeAutoObservable } from 'mobx'
 import { RootStore } from '.'
 
 class FleetStore {

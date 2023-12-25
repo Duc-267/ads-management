@@ -1,12 +1,12 @@
 import { Box, Heading, Text, VStack } from '@chakra-ui/react'
+import React from 'react'
+import { useMediaQuery } from 'react-responsive'
 import Icon from 'components/Icon'
 import {
   EAuthenticatePageGuide,
   EAuthenticatePageName,
   EAuthenticatePageTitle
 } from 'components/pages/AuthenticatePage/constant'
-import React from 'react'
-import { useMediaQuery } from 'react-responsive'
 import SelectFleetForm from '../components/SelectFleetForm'
 
 export interface ILoginProps {

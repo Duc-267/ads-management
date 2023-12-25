@@ -1,6 +1,6 @@
+import { get } from 'lodash'
 import { api, auth, errorHandler } from 'API'
 import { IFilterChartDate, IGetVehicleParams, IVehicle } from 'interfaces/vehicle'
-import { get } from 'lodash'
 import { CommonError } from 'types'
 import { IFilter, IPaginationList } from 'types/common'
 

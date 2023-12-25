@@ -1,10 +1,10 @@
 import { Box } from '@chakra-ui/react'
-import { getAllIncidents } from 'API/fleet'
-import BarChart, { EValueFilter, IDataChart } from 'components/BarChart'
-import { formatDateChart } from 'components/BarChart/utils'
 import { get } from 'lodash'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
+import { getAllIncidents } from 'API/fleet'
+import BarChart, { EValueFilter, IDataChart } from 'components/BarChart'
+import { formatDateChart } from 'components/BarChart/utils'
 
 const IncidentOverview = () => {
   const router = useRouter()

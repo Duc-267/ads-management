@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
-import { VehicleStatusEnum } from 'enums/vehicleStatus'
 import isUndefined from 'lodash/isUndefined'
 import { NextParsedUrlQuery } from 'next/dist/server/request-meta'
+import { VehicleStatusEnum } from 'enums/vehicleStatus'
 import { IVehicleQueryParams } from './constants'
 
 export function getValidValue(currentValue?: string): string {

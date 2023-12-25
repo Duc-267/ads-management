@@ -12,13 +12,13 @@ import {
   Button,
   useToast
 } from '@chakra-ui/react'
+import { observer } from 'mobx-react'
+import { useRouter } from 'next/router'
+import { useEffect, useRef, useState } from 'react'
 import { updateVehicle } from 'API/vehicle'
 import { VehicleStatusEnum } from 'enums/vehicleStatus'
 import { useStores } from 'hooks/useStores'
 import { IVehicle } from 'interfaces/vehicle'
-import { observer } from 'mobx-react'
-import { useRouter } from 'next/router'
-import { useEffect, useRef, useState } from 'react'
 import routes from 'routes'
 import AddEditVehicleForm from '../AddEditVehicleModal/AddEditVehicleForm'
 

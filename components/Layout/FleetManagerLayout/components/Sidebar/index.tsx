@@ -1,10 +1,9 @@
 import { Flex, Stack, VStack, Image, Text } from '@chakra-ui/react'
+import { useRouter } from 'next/router'
+import React, { RefObject } from 'react'
 import { FleetManagerPageName } from 'components/pages/FleetManager/constant'
 import { EZIndexLayer } from 'enums/theme'
 import { useStores } from 'hooks/useStores'
-import get from 'lodash/get'
-import { useRouter } from 'next/router'
-import React, { RefObject } from 'react'
 import routes from 'routes'
 import NavLink, { INavLinkProps } from '../NavLink'
 
@@ -56,14 +55,8 @@ const SideBar = (props: ISidebarProps) => {
         justifyContent={'space-between'}
       >
         <Stack spacing={2} marginX={3} marginY={3} width="full">
-          <NavLink
-            label={FleetManagerPageName.HOME}
-            {...getLinkProps(routes.fleetManager.home.value, 'ic-home')}
-          />
-          <NavLink
-            label={FleetManagerPageName.CASES}
-            {...getLinkProps(routes.fleetManager.cases.value, 'ic-cases')}
-          />
+          <NavLink label={FleetManagerPageName.HOME} {...getLinkProps(routes.fleetManager.home.value, 'ic-home')} />
+          <NavLink label={FleetManagerPageName.CASES} {...getLinkProps(routes.fleetManager.cases.value, 'ic-cases')} />
           <NavLink
             label={FleetManagerPageName.VEHICLES}
             {...getLinkProps(routes.fleetManager.vehicles.value, 'ic-vehicles')}
@@ -80,10 +73,7 @@ const SideBar = (props: ISidebarProps) => {
             label={FleetManagerPageName.REPORTS}
             {...getLinkProps(routes.fleetManager.reports.value, 'ic-reports')}
           />
-          <NavLink
-            label={FleetManagerPageName.ADMIN}
-            {...getLinkProps(routes.fleetManager.admin.value, 'ic-admin')}
-          />
+          <NavLink label={FleetManagerPageName.ADMIN} {...getLinkProps(routes.fleetManager.admin.value, 'ic-admin')} />
         </Stack>
         <Stack w="full" alignSelf={'end'}>
           <NavLink

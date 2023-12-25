@@ -1,8 +1,8 @@
 import { Box, HStack, VStack } from '@chakra-ui/react'
-import SvgIcon from 'components/SvgIcon'
-import { IUser } from 'interfaces/user'
 import React from 'react'
 import Highlighter from 'react-highlight-words'
+import SvgIcon from 'components/SvgIcon'
+import { IUser } from 'interfaces/user'
 import { getValidArray } from 'utils/common'
 
 type Props = {

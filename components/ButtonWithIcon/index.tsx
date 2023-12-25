@@ -1,5 +1,5 @@
-import IconWithText from 'components/IconWithText'
 import React from 'react'
+import IconWithText from 'components/IconWithText'
 import { ButtonWithIconWrapper } from './buttonWithIcon.styles'
 
 export interface IButtonWithIconProps {

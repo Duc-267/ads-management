@@ -1,6 +1,6 @@
+import React from 'react'
 import FleetManagerLayout from 'components/Layout/FleetManagerLayout'
 import HomePage from 'components/pages/FleetManager/HomePage'
-import React from 'react'
 
 const FleetManagerHomePage = () => {
   return (

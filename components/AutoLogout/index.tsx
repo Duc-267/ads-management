@@ -1,7 +1,7 @@
-import { useStores } from 'hooks/useStores'
 import { observer } from 'mobx-react'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import { useStores } from 'hooks/useStores'
 
 const events = ['mousemove'] // Add more events as needed
 

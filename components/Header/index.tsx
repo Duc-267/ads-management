@@ -1,7 +1,7 @@
-import { useAuth } from 'hooks/useAuth'
-import { useStores } from 'hooks/useStores'
 import { observer } from 'mobx-react'
 import { useEffect } from 'react'
+import { useAuth } from 'hooks/useAuth'
+import { useStores } from 'hooks/useStores'
 const Header = () => {
   const { testStore, authStore } = useStores()
   const { loginHandler } = useAuth()

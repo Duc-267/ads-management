@@ -13,11 +13,11 @@ import {
   SelectProps
 } from '@chakra-ui/react'
 import { yupResolver } from '@hookform/resolvers/yup'
-import FormInput from 'components/FormInput'
-import { EDiesel, IVehicle } from 'interfaces/vehicle'
 import { get } from 'lodash'
 import React, { Dispatch, memo, RefObject, SetStateAction, useEffect } from 'react'
 import { useForm, FormProvider, Controller } from 'react-hook-form'
+import FormInput from 'components/FormInput'
+import { EDiesel, IVehicle } from 'interfaces/vehicle'
 import { VehicleFormSchema } from './types'
 
 interface IVehicleFormProps {

@@ -1,7 +1,7 @@
 import { HStack } from '@chakra-ui/react'
+import React from 'react'
 import Icon from 'components/Icon'
 import { useStores } from 'hooks/useStores'
-import React from 'react'
 
 const TopBar = () => {
   const { authStore } = useStores()

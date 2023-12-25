@@ -1,5 +1,5 @@
-import { AuthenticateParams } from 'constants/enum'
 import axios from 'axios'
+import { AuthenticateParams } from 'constants/enum'
 import { IRequestHeader, IServerError } from 'interfaces/authentication'
 
 const API_URL = process.env.API_URL
