@@ -10,6 +10,9 @@ const departmentOfCultureRoutes = {
     surfaces: {
       value: `/department-of-culture/surfaces`
     },
+    surfacesRequests: {
+      value: `/department-of-culture/surfaces-requests`
+    },
   }
 }
 
