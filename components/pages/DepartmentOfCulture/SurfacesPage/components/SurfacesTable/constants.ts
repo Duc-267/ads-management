@@ -1,4 +1,4 @@
-export interface ISpacesTableData {
+export interface ISurfacesTableData {
   id: string
   format: string
   width: number

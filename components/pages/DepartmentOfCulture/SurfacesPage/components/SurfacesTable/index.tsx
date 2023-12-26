@@ -2,11 +2,11 @@ import { Text, VStack } from '@chakra-ui/react'
 import { observer } from 'mobx-react'
 import Table from 'components/Table'
 import { getValidArray } from 'utils/common'
-import { ISpacesTableData } from './constants'
 import { getHeaderList } from './utils'
+import { ISurfacesTableData } from './constants'
 
-const SpacesTable = () => {
-  const spaces: ISpacesTableData[] = [
+const SurfacesTable = () => {
+  const spaces: ISurfacesTableData[] = [
     {
       id: 'a',
       format: 'Hình ảnh',
@@ -22,7 +22,7 @@ const SpacesTable = () => {
       spaceId: 'abc'
     }
   ]
-  const tableData: ISpacesTableData[] = getValidArray(spaces).map(space => {
+  const tableData: ISurfacesTableData[] = getValidArray(spaces).map(space => {
     function navigateSpaceDetail(): void {
       // TODO: navigate to account detail page lateer
       // router.push(`/fleet-manager/case-detail/${caseDetail?.caseId}`)
@@ -52,4 +52,4 @@ const SpacesTable = () => {
   )
 }
 
-export default observer(SpacesTable)
+export default observer(SurfacesTable)

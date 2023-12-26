@@ -6,7 +6,10 @@ const departmentOfCultureRoutes = {
     },
     spaces: {
       value: `/department-of-culture/spaces`
-    }
+    },
+    surfaces: {
+      value: `/department-of-culture/surfaces`
+    },
   }
 }
 

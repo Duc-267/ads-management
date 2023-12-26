@@ -4,9 +4,9 @@ import { useRouter } from 'next/router'
 import React from 'react'
 import withAuth from 'HOCs/withAuth'
 import { useStores } from 'hooks/useStores'
-import SpacesTable from './components/SpacesTable'
+import SurfacesTable from './components/SpaceTable'
 
-const SpacesPage = () => {
+const SpacePage = () => {
   const [isLoading, setIsLoading] = React.useState<boolean>(true)
   const { fleetStore } = useStores()
   const router = useRouter()
@@ -51,11 +51,11 @@ const SpacesPage = () => {
     <VStack marginLeft={0} width="full" paddingX={4} paddingTop={6}>
       <VStack width="full" spacing={4}>
         <HStack width="full" spacing={5} margin={0} justifyContent="space-between">
-          <SpacesTable />
+          <SurfacesTable />
         </HStack>
       </VStack>
     </VStack>
   )
 }
 
-export default observer(withAuth(SpacesPage))
+export default observer(withAuth(SpacePage))
