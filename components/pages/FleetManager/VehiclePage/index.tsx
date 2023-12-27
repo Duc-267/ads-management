@@ -35,8 +35,8 @@ const VehiclePage = () => {
   const router = useRouter()
   const { query } = router
   const { fleets } = fleetStore
-  const currentFleetId: string = get(router, 'query.fleetId')
-  const statusFilter: VehicleStatusEnum = get(router, 'query.status')
+  const currentFleetId: string = 'abc'
+  const statusFilter: VehicleStatusEnum = VehicleStatusEnum.ACTIVE
   const pageIndex: number = getQueryValue(router, 'page', 1)
   const pageSize: number = 10
   const formRef = useRef<HTMLFormElement>(null)
@@ -182,7 +182,6 @@ const VehiclePage = () => {
           />
         </HStack>
         <Box width="full" height="1px" background="#E8E8E8" marginBottom={5} />
-        <VehicleTable pageSize={pageSize} fetchVehiclesPageData={fetchVehiclesPageData} />
       </VStack>
 
       <VehicleModal

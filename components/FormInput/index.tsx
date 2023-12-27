@@ -62,13 +62,13 @@ const FormInput = (props: IFormItemProps) => {
   } = useFormContext()
   let pattern: { value: RegExp; message: string } | undefined
   switch (name) {
-    case 'dateOfBirth':
-      //*INFO: validate (MM/DD/YYYY), with a year between 1900 and 2099
-      pattern = {
-        value: /^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$/,
-        message: 'Please enter a valid date'
-      }
-      break
+    // case 'birthday':
+    //   //*INFO: validate (MM/DD/YYYY), with a year between 1900 and 2099
+    //   pattern = {
+    //     value: /^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\d\d$/,
+    //     message: 'Please enter a valid date'
+    //   }
+    //   break
     default:
       pattern = undefined
   }
@@ -109,7 +109,7 @@ const FormInput = (props: IFormItemProps) => {
           color={inputColor}
           {...disabledProps}
           {...register(name, {
-            required: isRequired ? `${label ?? startCase(name)} is required` : false,
+            required: isRequired ? `${label ?? startCase(name)} không được rỗng` : false,
             pattern
           })}
         />

@@ -1,5 +1,6 @@
 import { Text, VStack } from '@chakra-ui/react'
 import { observer } from 'mobx-react'
+import ButtonWithIcon from 'components/ButtonWithIcon'
 import Table from 'components/Table'
 import { getValidArray } from 'utils/common'
 import { IAccountTableData } from './constants'

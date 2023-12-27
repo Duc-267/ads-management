@@ -21,7 +21,7 @@ export interface IModalCustom {
   isLoading?: boolean
 }
 
-export const VehicleModal = (props: IModalCustom) => {
+export const AddAccountModal = (props: IModalCustom) => {
   const {
     isOpen = false,
     onClose,
@@ -53,7 +53,7 @@ export const VehicleModal = (props: IModalCustom) => {
           <Box>
             {!isFleetDetail && (
               <Button mr={3} onClick={onClose}>
-                Cancel
+                Huỷ
               </Button>
             )}
             {onSecondaryClick && (
