@@ -30,5 +30,5 @@ export interface IDriverCreateParams {
   email: string
   role?: EDriverRole
   driverProfile: Partial<IDriverProfile>
-  fleetId: string
+  fleetId?: string
 }

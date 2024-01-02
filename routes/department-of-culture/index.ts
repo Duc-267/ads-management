@@ -4,6 +4,9 @@ const departmentOfCultureRoutes = {
     accounts: {
       value: `/department-of-culture/accounts`
     },
+    accountDetails: {
+      value: (id: string) => `/department-of-culture/accounts/${id}`
+    },
     spaces: {
       value: `/department-of-culture/spaces`
     },
@@ -12,7 +15,7 @@ const departmentOfCultureRoutes = {
     },
     surfacesRequests: {
       value: `/department-of-culture/surfaces-requests`
-    },
+    }
   }
 }
 

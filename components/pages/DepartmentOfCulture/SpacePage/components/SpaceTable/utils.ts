@@ -8,30 +8,20 @@ export function getHeaderList(): ITableHeader[] {
       disableSortBy: true
     },
     {
-      Header: 'EMAIL',
-      accessor: 'email',
+      Header: 'Hình thức quảng cáo',
+      accessor: 'format',
       disableSortBy: true
     },
     {
-      Header: 'PHONE',
-      accessor: 'phone',
+      Header: 'Địa chỉ',
+      accessor: 'address',
       disableSortBy: true
     },
     {
-      Header: 'BIRTHDAY',
-      accessor: 'birthday',
+      Header: 'Được quy hoạch',
+      accessor: 'planned',
       disableSortBy: true
     },
-    {
-      Header: 'NAME',
-      accessor: 'name',
-      disableSortBy: true
-    },
-    {
-      Header: 'ROLE',
-      accessor: 'role',
-      disableSortBy: true
-    }
   ]
   return headers
 }

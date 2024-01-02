@@ -30,7 +30,6 @@ const SetFleetPage = (props: ILoginProps) => {
     <Box minHeight={isOverflow ? '810px' : '100vh'}>
       <Box width="full" maxWidth="xl" marginX="auto" paddingY="188px">
         <Box maxWidth="416px" marginX={{ base: 8, md: 'auto' }}>
-          <Icon iconName="logo.svg" width={140} height={55} className="ono-logo" alt="ono-logo" />
           <VStack marginBottom={12} width="full" alignItems="flex-start">
             <Heading
               fontSize="24px"

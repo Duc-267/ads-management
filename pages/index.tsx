@@ -13,7 +13,6 @@ const Home = () => {
       </Head>
       <chakra.main>
         <Stack backgroundColor="#202A3B" justifyContent={'center'} alignItems={'center'} h="100vh">
-          <Icon iconName="logo.svg" width={402} height={55} className="ono-logo" alt="ono-logo" />
         </Stack>
       </chakra.main>
     </>

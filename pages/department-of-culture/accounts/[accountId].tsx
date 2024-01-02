@@ -1,11 +1,11 @@
 import React from 'react'
 import DepartmentOfCultureLayout from 'components/Layout/DepartmentOfCultureLayout'
-import SurfacesPage from 'components/pages/DepartmentOfCulture/SurfacesPage'
+import AccountDetailPage from 'components/pages/DepartmentOfCulture/AccountDetailPage'
 
 const DepartmentOfCultureAccountsPage = () => {
   return (
     <DepartmentOfCultureLayout title={`Ad Management`}>
-      <SurfacesPage />
+      <AccountDetailPage />
     </DepartmentOfCultureLayout>
   )
 }

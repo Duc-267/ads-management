@@ -1,12 +1,13 @@
 import { Text, VStack } from '@chakra-ui/react'
 import { observer } from 'mobx-react'
-import ButtonWithIcon from 'components/ButtonWithIcon'
+import { useRouter } from 'next/router'
 import Table from 'components/Table'
 import { getValidArray } from 'utils/common'
 import { IAccountTableData } from './constants'
 import { getHeaderList } from './utils'
 
 const AccountsTable = () => {
+  const router = useRouter()
   const accounts: IAccountTableData[] = [
     {
       id: 'a',
@@ -27,8 +28,7 @@ const AccountsTable = () => {
   ]
   const tableData: IAccountTableData[] = getValidArray(accounts).map(account => {
     function navigateAccountDetail(): void {
-      // TODO: navigate to account detail page lateer
-      // router.push(`/fleet-manager/case-detail/${caseDetail?.caseId}`)
+      router.push(`/department-of-culture/accounts/${account.id}`)
     }
 
     return {

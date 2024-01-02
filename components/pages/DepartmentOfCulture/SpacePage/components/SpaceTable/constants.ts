@@ -5,6 +5,7 @@ export interface ISpaceTableData {
   lat: number
   format: string
   isPlanned: boolean
+  planned?: string
   wardId: string
   onClick?: () => void
 }

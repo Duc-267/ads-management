@@ -38,7 +38,6 @@ const SideBar = (props: ISidebarProps) => {
       zIndex={EZIndexLayer.NAV}
     >
       <VStack width="full" padding={4} spacing="10px" marginTop={10} alignItems="flex-start">
-        <Image alt="ono_logo.svg" src={`/assets/icons/logo.svg`} width="100px" height={10} />
         <Text fontSize="2xl" fontWeight={500}>
           Dashboard
         </Text>
@@ -57,6 +56,7 @@ const SideBar = (props: ISidebarProps) => {
         <Stack spacing={2} marginX={3} marginY={3} width="full">
           <NavLink label={'Danh sách quận, phường'} {...getLinkProps(routes.departmentOfCulture.accounts.value)} />
           <NavLink label={'Danh sách bảng quảng cáo'} {...getLinkProps(routes.departmentOfCulture.spaces.value)} />
+          <NavLink label={'Danh sách điểm quảng cáo'} {...getLinkProps(routes.departmentOfCulture.surfaces.value)} />
         </Stack>
         <Stack w="full" alignSelf={'end'}>
           <NavLink

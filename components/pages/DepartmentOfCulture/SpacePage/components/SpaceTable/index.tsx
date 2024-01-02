@@ -14,7 +14,8 @@ const SpaceTable = () => {
       lat: 100,
       address: 'abc',
       isPlanned: true,
-      wardId: 'abc'
+      wardId: 'abc',
+
     },
     {
       id: 'b',
@@ -34,6 +35,7 @@ const SpaceTable = () => {
 
     return {
       ...space,
+      planned: space.isPlanned ? 'Có' : 'Không',
       onClick: navigateAccountDetail
     }
   })
