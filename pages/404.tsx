@@ -1,9 +1,16 @@
 import { Stack, chakra } from '@chakra-ui/react'
-import Icon from 'components/Icon'
 import { observer } from 'mobx-react'
 import Head from 'next/head'
+import Icon from 'components/Icon'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 const Page404 = () => {
+  const router = useRouter()
+  useEffect(() => {
+    router.push('/login')
+  }, [])
+
   return (
     <>
       <Head>

@@ -1,5 +1,5 @@
-import { EBreakPoint } from 'enums/theme'
 import { MediaQueryAllQueryable, useMediaQuery } from 'react-responsive'
+import { EBreakPoint } from 'enums/theme'
 import { breakPointValues } from 'theme/globalStyles'
 
 type MediaQuerySettings = Partial<

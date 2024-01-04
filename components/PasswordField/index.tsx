@@ -1,8 +1,8 @@
-import { PASSWORD_PATTERN } from 'constants/common'
 import { FormControl, FormErrorMessage, FormLabel, HStack, Input } from '@chakra-ui/react'
-import Icon from 'components/Icon'
 import get from 'lodash/get'
 import { Controller, useFormContext } from 'react-hook-form'
+import Icon from 'components/Icon'
+import { PASSWORD_PATTERN } from 'constants/common'
 
 export interface IPasswordField {
   autoFocus?: boolean

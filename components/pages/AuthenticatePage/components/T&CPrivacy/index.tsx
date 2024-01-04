@@ -1,6 +1,6 @@
 import { Link, Text, useDisclosure } from '@chakra-ui/react'
-import PopupInformation from 'components/PopupInfomation'
 import React, { useState } from 'react'
+import PopupInformation from 'components/PopupInfomation'
 
 const TnCPrivacy = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()

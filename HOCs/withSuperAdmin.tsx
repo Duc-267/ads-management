@@ -1,6 +1,6 @@
-import { useStores } from 'hooks/useStores'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import { useStores } from 'hooks/useStores'
 import routes from 'routes'
 
 const withSuperAdmin = <P extends object>(WrappedComponent: React.ComponentType<P>) => {

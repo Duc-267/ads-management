@@ -1,7 +1,7 @@
 import { Stack, chakra } from '@chakra-ui/react'
-import Icon from 'components/Icon'
 import { observer } from 'mobx-react'
 import Head from 'next/head'
+import Icon from 'components/Icon'
 
 const Home = () => {
   return (
@@ -13,7 +13,6 @@ const Home = () => {
       </Head>
       <chakra.main>
         <Stack backgroundColor="#202A3B" justifyContent={'center'} alignItems={'center'} h="100vh">
-          <Icon iconName="logo.svg" width={402} height={55} className="ono-logo" alt="ono-logo" />
         </Stack>
       </chakra.main>
     </>

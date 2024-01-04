@@ -1,7 +1,7 @@
 import { Box, Heading, Text, VStack } from '@chakra-ui/react'
-import Icon from 'components/Icon'
 import React, { useState } from 'react'
 import { useMediaQuery } from 'react-responsive'
+import Icon from 'components/Icon'
 import ForgotPasswordConfirmForm from './components/ForgotPasswordConfirmForm'
 import ForgotPasswordForm from './components/ForgotPasswordForm'
 import LoginForm from './components/LoginForm'
@@ -83,7 +83,6 @@ const AuthenticatePage = (props: ILoginProps) => {
     <Box minHeight={isOverflow ? '810px' : '100vh'}>
       <Box width="full" maxWidth="xl" marginX="auto" paddingY="188px">
         <Box maxWidth="416px" marginX={{ base: 8, md: 'auto' }}>
-          <Icon iconName="logo.svg" width={140} height={55} className="ono-logo" alt="ono-logo" />
           <VStack marginBottom={12} width="full" alignItems="flex-start">
             <Heading
               fontSize="24px"

@@ -1,8 +1,8 @@
-import { AuthenticateParams, ErrorMessageEnum } from 'constants/enum'
+import { action, makeObservable, observable, runInAction } from 'mobx'
 import { getCurrentUser, login as loginAPI } from 'API/authenticate'
+import { AuthenticateParams, ErrorMessageEnum } from 'constants/enum'
 import { ILoginDataReq, ILoginDataRes } from 'interfaces/authentication'
 import { IUser } from 'interfaces/user'
-import { action, makeObservable, observable, runInAction } from 'mobx'
 import { CommonError } from 'types'
 
 class AuthStore {

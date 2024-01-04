@@ -1,3 +1,4 @@
+import { get } from 'lodash'
 import { api, auth, errorHandler } from 'API'
 import { EValueFilter, IDataChart } from 'components/BarChart'
 import { IFleetCreateParam, IPostImageFleetForm } from 'components/pages/SuperAdmin/HomePage/components/FleetForm/types'
@@ -5,7 +6,6 @@ import { FlagEnum } from 'enums/flag'
 import { IActivityLog } from 'interfaces/activityLog'
 import { ICaseDetail } from 'interfaces/case'
 import { IFleet, IFleetCompanyView, IResponseSearchValue } from 'interfaces/fleet'
-import { get } from 'lodash'
 import { CommonError } from 'types'
 
 export async function getAllFleet(): Promise<IFleet[]> {

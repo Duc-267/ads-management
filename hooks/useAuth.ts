@@ -1,5 +1,5 @@
-import { ILoginDataReq } from 'interfaces/authentication'
 import { useEffect } from 'react'
+import { ILoginDataReq } from 'interfaces/authentication'
 import { CommonError } from 'types'
 import { useStores } from './useStores'
 

@@ -1,6 +1,6 @@
+import { makeAutoObservable } from 'mobx'
 import { getDrivers } from 'API/driver'
 import { IDriver } from 'interfaces/driver'
-import { makeAutoObservable } from 'mobx'
 import { IFilter, IPaginationList } from 'types/common'
 import { RootStore } from '.'
 

@@ -1,6 +1,6 @@
+import { makeAutoObservable } from 'mobx'
 import { getFleetCompaniesView, unarchiveFleetCompany } from 'API/fleet'
 import { IFleetCompanyView } from 'interfaces/fleet'
-import { makeAutoObservable } from 'mobx'
 import { RootStore } from '.'
 
 class SuperAdminStore {

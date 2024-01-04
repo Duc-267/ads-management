@@ -1,6 +1,6 @@
 import { Box, Text } from '@chakra-ui/react'
-import Icon from 'components/Icon'
 import React, { memo } from 'react'
+import Icon from 'components/Icon'
 export interface INavigateBarProps {
   handleBack: () => void
   title: string

@@ -1,3 +1,10 @@
+import { Spinner, Stack, useToast } from '@chakra-ui/react'
+import get from 'lodash/get'
+import { useRouter } from 'next/router'
+import React, { useEffect, useState } from 'react'
+import { FormProvider, useForm } from 'react-hook-form'
+import { resetPassword, verifyToken } from 'API/authenticate'
+import PasswordField from 'components/PasswordField'
 import { PASSWORD_PATTERN } from 'constants/common'
 import {
   invalidPasswordDescription,
@@ -6,15 +13,8 @@ import {
   setPasswordInvalidTokenDescription,
   setPasswordSuccessDescription
 } from 'constants/messages'
-import { Spinner, Stack, useToast } from '@chakra-ui/react'
-import { resetPassword, verifyToken } from 'API/authenticate'
-import PasswordField from 'components/PasswordField'
 import { useStores } from 'hooks/useStores'
 import { IVerifyTokenResponse } from 'interfaces/user'
-import get from 'lodash/get'
-import { useRouter } from 'next/router'
-import React, { useEffect, useState } from 'react'
-import { FormProvider, useForm } from 'react-hook-form'
 import routes from 'routes'
 import { SubmitButton } from '../../authenticatePage.styles'
 import TnCPrivacy from '../T&CPrivacy'

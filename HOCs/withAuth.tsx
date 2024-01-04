@@ -1,7 +1,5 @@
-import { useStores } from 'hooks/useStores'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
-import routes from 'routes'
+import { useStores } from 'hooks/useStores'
 
 const withAuth = <P extends object>(WrappedComponent: React.ComponentType<P>) => {
   const Wrapper: React.FC<P> = props => {
