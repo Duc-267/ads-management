@@ -1,7 +1,6 @@
 import { Flex, Stack, VStack, Image, Text } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
 import React, { RefObject } from 'react'
-import { FleetManagerPageName } from 'components/pages/FleetManager/constant'
 import { EZIndexLayer } from 'enums/theme'
 import { useStores } from 'hooks/useStores'
 import routes from 'routes'
@@ -60,7 +59,7 @@ const SideBar = (props: ISidebarProps) => {
         </Stack>
         <Stack w="full" alignSelf={'end'}>
           <NavLink
-            label={FleetManagerPageName.LOGOUT}
+            label={'Đăng xuất'}
             onClick={() => {
               authStore.logout()
             }}
